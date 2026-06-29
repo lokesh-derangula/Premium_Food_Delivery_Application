@@ -167,12 +167,15 @@ Ensure you have the following installed on your local machine:
 *   **Eclipse IDE / IntelliJ IDEA / VS Code (with Java Extension Pack)**
 
 ### 2. DB Credentials Configuration
-Open [DBConnection.java](file:///c:/Users/Loku/Tap-Software/Tap-Workspace/JEE/src/main/java/com/food/utility/DBConnection.java) and verify your MySQL connection string, username, and password:
+Open [DBConnection.java](src/main/java/com/food/utility/DBConnection.java) and verify your MySQL connection string, username, and password:
 ```java
 private static final String URL = "jdbc:mysql://localhost:3306/food_delivery_application";
-private static final String USERNAME = "root";  // Change to your MySQL username
-private static final String PASSWORD = "root";  // Change to your MySQL password
+private static final String USERNAME = "YOUR_DATABASE_USERNAME";
+private static final String PASSWORD = "YOUR_DATABASE_PASSWORD";
 ```
+
+> [!WARNING]
+> **Credential Security**: Never commit production credentials or absolute local directory paths to your version control. It is recommended to use environment variables or external configuration property files (excluded via `.gitignore`) for secret management.
 
 ### 3. Running the Project
 1. Clone or import this project directory into your IDE as a **Dynamic Web Project** or **Maven/Eclipse Project**.

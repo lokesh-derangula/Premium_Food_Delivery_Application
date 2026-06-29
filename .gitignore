@@ -1,0 +1,27 @@
+# Compiled Java Class Files
+*.class
+bin/
+build/
+target/
+
+# IDE and Project Settings
+.settings/
+.classpath
+.project
+.vscode/
+.idea/
+*.iml
+*.sublime-project
+*.sublime-workspace
+
+# OS Temporary Files
+.DS_Store
+Thumbs.db
+
+# Configuration Files & Sensitive Files
+*.properties
+*.env
+*.key
+*.cert
+logs/
+*.log
